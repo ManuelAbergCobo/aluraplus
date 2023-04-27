@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* COLORES */
+    --cor-fundo: #00030C;
+    --cor-titulo-subtitulo: #FFFFFF;
+    --cor-texto: #C0C0C0;
+    --cor-botao: #167BF7;
+
+    /*FONTS*/
+    --fonte-principal: 'Inter', sans-serif;
+
+}
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-titulo-subtitulo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container-titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container-imagem {
+    margin: 1em 0 2em 0;   
+}
+.container-botao {
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-titulo-subtitulo);
+    display: block;
+    text-decoration: none;
+    margin-bottom:1em;
+}
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-titulo-subtitulo);
+}
+.container-aviso {
+    font-size: 12px;
+    color: var(--cor-texto);
+}
+.container-caixa {
+    margin: 0 6em;
+}
+.secundario-imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao-titulo {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--cor-titulo-subtitulo);
+    margin-bottom: 0.1em;
+}
+.descricao-texto {
+    color: var(--cor-texto);
+}
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container-descricao {
+    padding: 2em;
+}
+.dispositivos-titulo {
+    font-size: 48px;
+    color: var(--cor-titulo-subtitulo);
+}
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos {
+    text-align: center;
+}
+.lista-item {
+    font-size: 32px;
+    color: var(--cor-titulo-subtitulo);
+}
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+.lista-link a {
+    text-decoration: none;
+    color: var(--cor-titulo-subtitulo);
+    margin-left: 1em;
+
+}
+.rodape-texto {
+    color: var(--cor-texto);
+    margin: 1em 0;
+    font-size: 14px;
+}
+.lista-link a:hover {
+    color: var(--cor-botao);
+}
